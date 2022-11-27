@@ -1,0 +1,82 @@
+<html>
+    <head>
+        <title>LOGIN PAGE</title>
+        <style>
+            table{
+                border:solid;
+                width:60%;
+                margin:10% 25% 10% 25%;
+                font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                background-color: lightblue;
+                font-size:25px;
+                border-spacing: 30px;
+            }
+            input{
+                font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                font-size:20px;
+            }
+            body{
+                border:solid;
+                background-color: lightgoldenrodyellow;
+                margin:20px 20px 20px 20px;
+            }
+            button{
+                width:100px;
+                height:50px;
+            }
+        </style>
+    </head>
+    <form name="myform" method="post" onsubmit="return alertUser()" action="abc.jsp">
+    <body align="center" style="font-size:20px;">
+        <h1 style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif">LOGIN PAGE</h1><br>
+        <a href="C:\Users\rodda\Desktop\hackathon\store.html">HOME</a>
+        <table align="center">
+        <tr>
+            <td>
+                Enter your mobile number:
+            </td>
+            <td>
+                <input type="number" id="mobile" name="name" placeholder="Enter your mobile number"/>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Enter password:
+            </td>
+            <td>
+                <input type="password" id ="password" name="password" placeholder="Create a password."/>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button type="submit"   value="register">Register</button>
+            </td>
+            <td>
+                <button class="RESET" value="reset" onclick="action()">RESET</button>
+            </td>
+        </tr>
+        </table>
+    </body>
+</form>
+    <script>  
+        function alertUser(){  
+		console.log("Hiii");
+        var name=document.getElementById("mobile").value;  
+        var password=document.getElementById("password").value; 
+		console.log("Hello"+name);
+          
+        if (name==null || name.length!=10){  
+
+          alert("Number must be 10 digits");  
+          return false;  
+        }
+        else if(password.length<6){  
+          alert("Password must be at least 6 characters long.");  
+          return false;  
+          }
+        else{
+            alert("you are registered successfully !!!")
+        } 
+        }
+        </script>
+</html>
