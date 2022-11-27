@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Vishnu Handout</title><link rel="stylesheet"
+         href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+        <style>
+        .container {
+            height: 120px;
+            display:flex;
+            background-color:lightblue;
+	        max-width: 100%;
+	        padding: 0px;
+	        margin: 0 auto;
+            flex-wrap:wrap;
+            padding-left: 10px;
+        }
+        .main-header .container {
+	        display: flex;
+	        align-items: center;
+            justify-content: space-around;
+	        flex-wrap: wrap;
+        }
+        @media (min-width: 720px) {
+	        .main-header .container {
+		    justify-content: space-between;
+	        }
+        }
+        .flex-item{
+            width:100%;
+            height:0px;
+            font-size:10px;
+            margin-left:auto;
+        }
+        .img {
+	        max-width: 100%;
+	        height: auto;
+        }
+        .main-nav ul {
+	        margin: 0.5em 0.5em;
+	        text-align: center;
+        }
+        .main-nav li {
+	        display: inline;
+            font-size: 20px;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        .main-nav a {
+	        display: inline-block;
+	        padding: .25em .5em;
+        }
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+        .containers{
+            width:1500px;
+            height:100vh;
+            background:lavender;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+        }
+        .swiper{
+            width: 1100px;
+            height:fit-content;
+        }
+        .swiper-slide img{
+            width:100%;
+        }
+        .swiper .swiper-button-prev, .swiper .swiper-button-next{
+            color:#fff;
+        }
+        .swiper .swiper-pagination-bullet-active{
+            background: #fff;
+        }
+    </style>
+    </head>
+    <body>
+        <header class="main-header">
+            <div class="container">
+                <div><h2><img src="C:\Users\rodda\Desktop\hackathon\logo-removebg-preview.png" width="85" height="85" alt="Vishnu Logo"/>
+                <img src="C:\Users\rodda\Desktop\hackathon\ts.jpg" width="160" height="85" alt="Vishnu Store"/></h2></div>
+                <h1 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">VISHNU HANDOUTS......</h1>
+                <em style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;"><b>(it is always a correct and right choice)</b></em>
+                <div><nav class="main-nav">
+                    <ul class="main-nav-list">
+                        <li>
+                            <a href="C:\Users\rodda\Desktop\hackathon\store.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="C:\Users\rodda\Desktop\hackathon\order.html">Order</a>
+                        </li>
+                        <li>
+                            <a href="C:\Users\rodda\Desktop\hackathon\login.html" target="_blank">Login</a>
+                        </li>
+                        <li>
+                            <a href="C:\Users\rodda\Desktop\hackathon\contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+                </div>
+        </header><br><br>
+        <center>
+        <div class="search">
+            <form action="#">
+                <input style="font-size: 20px;" type="text"
+                    placeholder=" Search Products"
+                    name="search">
+                <button>
+                    <i style="font-size: 15px;">search</i>
+                </button>
+            </form>
+        </div>
+        <h2>10% discount on purchase of 200 and above<br>Hurry and grab this opportunity</h2>
+        <em><b><a href="C:\Users\rodda\Desktop\hackathon\contents.html">SHOP NOW</a></b></em>
+        </center>
+        <div class="containers">
+            <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="C:\Users\rodda\Desktop\hackathon\ts.jpg" alt="Slide 1"></div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+        </div>
+        <script src=""https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+        <script>
+            const swiper=new Swiper('.swiper',{
+                autoplay: {
+                    delay: 3000,
+                    disableOnInteraction: true,
+                },
+                loop: true,
+                pagination: {
+                    e1: '.swiper-pagination',
+                    clickable: true,
+                },
+                navigation: {
+                    nextE1: '.swiper-button-next',
+                    prevE1: '.swiper-button-prev',
+                },
+            });
+        </script>
+    </body>
+</html>
